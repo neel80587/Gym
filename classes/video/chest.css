@@ -1,0 +1,32 @@
+.video-gallery {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-player {
+    margin-bottom: 20px;
+  }
+  
+  .video-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .video-thumbnail {
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .video-thumbnail video {
+    border-radius: 5px;
+  }
+  
+  .video-thumbnail p {
+    font-size: 12px;
+    margin-top: 5px;
+  }

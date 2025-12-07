@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEST</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('https://example.com/path/to/your/background-image.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; 
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        video {
+            width: 100%; 
+            max-width: 400px; 
+            height: 225px; 
+            margin: 5px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        @media (min-width: 600px) {
+            video {
+                width: 45%; 
+            }
+        }
+        @media (min-width: 900px) {
+            video {
+                width: 30%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Price Container</p>
+    <div class="video-container">
+        <video src="/strike-gym-website/src/components/contact/armvid/1.mp4" controls loop></video>
+        <video src="/strike-gym-website/src/components/contact/armvid/2.mp4" controls loop></video>
+        <video src="/strike-gym-website/src/components/contact/armvid/3.mp4" controls loop></video>
+        <video src="/strike-gym-website/src/components/contact/armvid/4.mp4" controls loop></video>
+        <video src="/strike-gym-website/src/components/contact/armvid/5.mp4" controls loop></video>
+        <video src="/strike-gym-website/src/components/contact/armvid/6.mp4" controls loop></video>
+        <video src="/strike-gym-website/src/components/contact/armvid/8.mp4" controls loop></video>
+            </div>
+    <script>
+       
+        function adjustVideoSize() {
+            const videos = document.querySelectorAll('video');
+            videos.forEach(video => {
+                video.style.width = '100%';
+                video.style.height = 'auto'; 
+            });
+        }
+
+        
+        window.addEventListener('load', adjustVideoSize);
+        window.addEventListener('resize', adjustVideoSize);
+    </script>
+</body>
+</html>
